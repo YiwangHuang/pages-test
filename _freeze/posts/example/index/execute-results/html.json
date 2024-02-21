@@ -1,0 +1,15 @@
+{
+  "hash": "0764368a0b22ba6332b00891d0957218",
+  "result": {
+    "engine": "knitr",
+    "markdown": "---\ntitle: \"Example\"\nauthor: \"Harlow Malloc\"\ndate: \"2024-02-11\"\ncategories: [news, code, analysis]\n# image: \"image.jpg\"\n\n# title: \"example\"\n# author: \"黄轶凡\"\n# editor: visual\n# lang: zh\n# mainfont: \"LXGW WenKai Mono\"\n# format: \n#   html:\n#     #toc: true\n#     #toc-location: left\n#     theme: default # Cyborg cosmo\n#     embed-resources: true\n#     html-math-method: katex\n  # pptx:\n  #   reference-doc: template_XWWK.pptx\n  #   incremental: true\n  # docx:\n  #   toc: true\n  #   number-sections: true\n  #   highlight-style: github\n  \n  # revealjs:\n  #   theme: default\n  #   incremental: true\n  #   footer: \"桐乡市高级中学\"\n# 控制台运行quarto::quarto_render(\"example.qmd\")\n---\n\n\n# 格式\n\n## 分栏和动画\n\n::: columns\n::: {.column width=\"50%\"}\n-   确定原点：第一个小球的球心。\n\n    ::: fragment\n    球心是原点唯一选择吗？\n    :::\n\n-   建立坐标系\n:::\n\n::: {.column width=\"50%\"}\n-   验证关系：\n\n    -   如何验证水平方向是匀速直线运动？\n    -   如何验证竖直方向自由落体？\n    -   如何求小球的初速度？\n    -   选择的小球的位置A还是B更合适？\n:::\n:::\n\nQuarto enables you to weave together content and executable code into a finished presentation. To learn more about Quarto presentations see <https://quarto.org/docs/presentations/>.\n\n## 数学公式1\n\n### 第一类换元法\n\n设 $f(u)$ 具有原函数 $F(u)$，即\n\n$$\nF^{\\prime}(u)=f(u),\\int f(u)\\mathrm{d}u=F(u)+C.\n$$\n\n如果$u$是中间变量 $u=\\varphi\\left(x\\right)$ ,且设 $\\varphi(x)$ 可微，那么，根据复合函数微分法,有\n\n$$\n\\mathrm{d}F[\\,\\varphi(x)\\,]=f[\\,\\varphi(\\,x\\,)\\,]\\,\\varphi^{\\prime}(\\,x\\,)\\,\\mathrm{d}x,\n$$\n\n--- <!--# 控制PPT换页 -->\n\n从而根据不定积分的定义就得\n\n$$\n\\int f[\\,\\varphi(x)\\,]\\,\\varphi^{\\prime}(x)\\,\\mathrm{d}x=F\\left[\\,\\varphi(x)\\,\\right]+C=\\left[\\int f(u)\\,\\mathrm{d}u\\right]_{u=\\varphi(x)}.\n$$\n\n## 数学公式2\n\n$$\n\\begin{cases}\n    v=v_0+at\\\\\n    x=\\frac{(v+v_0)t}{2}\\\\\n    x=v_0t+\\frac{1}{2}at^2\\\\\n    v^2-v_{0}^{2}=2ax\\\\\n\\end{cases}\n$$\n\n## 表格\n\n| Right | Left | Default | Center |\n|------:|:-----|---------|:------:|\n|    12 | 12   | 12      |   12   |\n|   123 | 123  | 123     |  123   |\n|     1 | 1    | 1       |   1    |\n\n## HTML组件\n\n<iframe src=\"https://ggbtool.phycat.cn/front/?id=lre7y3i5b6s&amp;W=800&amp;H=500&amp;E=0&amp;B=1&amp;S=0&amp;P=1&amp;R=0&amp;L=1&amp;F=1&amp;RE=1\" width=\"800\" height=\"500\" frameborder=\"0\" scrolling=\"no\" allowfullscreen>\n\n</iframe>\n\n## 代码支持\n\n\n::: {.cell}\n\n```{.r .cell-code}\n1 + 1\n```\n\n::: {.cell-output .cell-output-stdout}\n\n```\n[1] 2\n```\n\n\n:::\n:::\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}

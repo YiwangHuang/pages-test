@@ -1,0 +1,130 @@
+---
+title: "示例文件"
+author: "黄轶凡"
+date: "2024-02-11"
+categories: [news, code, analysis]
+# image: "image.jpg"
+---
+
+# 格式
+
+## 分栏和动画
+
+::: columns
+::: {.column width="70%"}
+-   确定原点：第一个小球的球心。
+
+    ::: fragment
+    球心是原点唯一选择吗？
+    :::
+
+-   建立坐标系
+
+-   验证关系：
+
+    -   如何验证水平方向是匀速直线运动？
+    -   如何验证竖直方向自由落体？
+    -   如何求小球的初速度？
+    -   选择的小球的位置A还是B更合适？
+:::
+
+::: {.column width="30%"}
+![平抛运动的频闪照片](assets/image-20240114103512443.png)
+:::
+:::
+
+## 数学公式1
+
+### 第一类换元法
+
+设 $f(u)$ 具有原函数 $F(u)$，即
+
+$$
+F^{\prime}(u)=f(u),\int f(u)\mathrm{d}u=F(u)+C.
+$$
+
+如果$u$是中间变量 $u=\varphi\left(x\right)$ ,且设 $\varphi(x)$ 可微，那么，根据复合函数微分法,有
+
+$$
+\mathrm{d}F[\,\varphi(x)\,]=f[\,\varphi(\,x\,)\,]\,\varphi^{\prime}(\,x\,)\,\mathrm{d}x,
+$$
+
+--- <!--# 控制PPT换页 -->
+
+从而根据不定积分的定义就得
+
+$$
+\int f[\,\varphi(x)\,]\,\varphi^{\prime}(x)\,\mathrm{d}x=F\left[\,\varphi(x)\,\right]+C=\left[\int f(u)\,\mathrm{d}u\right]_{u=\varphi(x)}.
+$$
+
+$$
+\overrightarrow{F_{\text{合}}}=m_1\overrightarrow{a_1}+m_2\overrightarrow{a_2}+\cdots +m_n\overrightarrow{a_n}
+$$
+
+## 数学公式2
+
+$$
+\begin{cases}
+    v=v_0+at\\
+    x=\frac{(v+v_0)t}{2}\\
+    x=v_0t+\frac{1}{2}at^2\\
+    v^2-v_{0}^{2}=2ax\\
+\end{cases}
+$$
+
+## 表格
+
+| Right | Left | Default | Center |
+|------:|:-----|---------|:------:|
+|    12 | 12   | 12      |   12   |
+|   123 | 123  | 123     |  123   |
+|     1 | 1    | 1       |   1    |
+
+## 音影
+
+{{< video ./assets/平抛运动实验简化.mp4 >}}
+
+<iframe src="https://player.bilibili.com/player.html?aid=1600395537&bvid=BV1G2421c7Lb&cid=1434076183&p=1" scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true" width="800" height="500"> </iframe>
+<!--# <video src="./assets/平抛运动实验简化.mp4"></video>  -->
+
+## HTML组件
+
+<iframe src="https://ggbtool.phycat.cn/front/?id=lre7y3i5b6s&amp;W=800&amp;H=500&amp;E=0&amp;B=1&amp;S=0&amp;P=1&amp;R=0&amp;L=1&amp;F=1&amp;RE=1" width="800" height="500" frameborder="0" scrolling="no" allowfullscreen>
+
+</iframe>
+
+## 代码支持
+
+```{python}
+# import numpy as np
+# import matplotlib.pyplot as plt
+# xList = np.linspace(-3,3)
+# plt.plot(xList, np.sin(xList))
+# plt.show()
+import numpy as np
+import matplotlib.pyplot as plt
+
+fig = plt.figure()
+x = np.arange(10)
+y = 2.5 * np.sin(x / 20 * np.pi)
+yerr = np.linspace(0.05, 0.2, 10)
+
+plt.errorbar(x, y + 3, yerr=yerr, label='both limits (default)')
+plt.errorbar(x, y + 2, yerr=yerr, uplims=True, label='uplims=True')
+plt.errorbar(x, y + 1, yerr=yerr, uplims=True, lolims=True,
+             label='uplims=True, lolims=True')
+
+upperlimits = [True, False] * 5
+lowerlimits = [False, True] * 5
+plt.errorbar(x, y, yerr=yerr, uplims=upperlimits, lolims=lowerlimits,
+             label='subsets of uplims and lolims')
+
+plt.legend(loc='lower right')
+plt.show(fig)
+```
+
+:::{.callout-note}
+$$
+\alpha = \beta
+$$
+:::

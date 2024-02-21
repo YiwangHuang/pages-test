@@ -1,0 +1,24 @@
+project:
+  type: website
+
+website:
+  title: "second"
+  navbar:
+    right:
+      - about.qmd
+      - icon: github
+        href: https://github.com/
+      - icon: twitter
+        href: https://twitter.com
+  # sidebar:
+  #   contents: auto
+format:
+  html:
+    theme: cosmo
+    # vapor Sketchy Quartz Flatly
+    css: styles.css
+    html-math-method: katex #  plain
+    toc: true
+
+editor: visual
+
