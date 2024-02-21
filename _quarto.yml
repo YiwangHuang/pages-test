@@ -20,5 +20,8 @@ format:
     html-math-method: katex #  plain
     toc: true
 
+execute:
+  freeze: auto
+  
 editor: visual
 
